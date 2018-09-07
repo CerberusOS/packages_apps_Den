@@ -115,18 +115,28 @@
 
     <!-- Disable music track title in QS tile -->
     <!-- Small quick settings scroller -->
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider">Brightness Slider</string>
+    <string name="qs_show_brightness_title">Brightness slider</string>
+    <string name="qs_show_brightness_summary">Show a brightness slider in the quick settings panel</string>
+    <string name="qs_brightness_position_bottom_title">Brightness slider on bottom</string>
+    <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
+
     <!-- QS rows and columns -->
     <string name="qs_row_column_config">QS Tiles rows &amp; columns</string>
     <string name="qs_rows_portrait_title">Rows (Portrait)</string>
     <string name="qs_rows_landscape_title">Rows (Landscape)</string>
     <string name="qs_columns_portrait_title">Columns (Portrait)</string>
     <string name="qs_columns_landscape_title">Columns (Landscape)</string>
+
     <!-- QS tiles mini mode -->
     <!-- QS footer warnings -->
     <!-- QS footer Running Services icon -->
     <!-- QS footer Settings icon -->
     <!-- QS tiles title visibility -->
     <!-- QS carrier text visibility -->
+
     <!-- QS Headers -->
     <string name="daylight_header_provider" translatable="false">daylight</string>
     <string name="custom_header_browse_title">Browse installed headers</string>
