@@ -21,4 +21,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/quick_settings_title">
 
+    <PreferenceCategory
+        android:title="@string/qs_row_column_config">
+
+         <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="7"
+            android:min="1"
+            app:unitsLeft=""
+            app:unitsRight=""
+            android:defaultValue="3"
+            android:persistent="false" />
+
+         <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            android:min="1"
+            app:unitsLeft=""
+            app:unitsRight=""
+            android:defaultValue="2"
+            android:persistent="false" />
+
+         <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="10"
+            android:min="1"
+            app:unitsLeft=""
+            app:unitsRight=""
+            android:defaultValue="4"
+            android:persistent="false" />
+
+         <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="10"
+            android:min="1"
+            app:unitsLeft=""
+            app:unitsRight=""
+            android:defaultValue="5"
+            android:persistent="false" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>

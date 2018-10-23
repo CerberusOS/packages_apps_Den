@@ -116,6 +116,11 @@
     <!-- Disable music track title in QS tile -->
     <!-- Small quick settings scroller -->
     <!-- QS rows and columns -->
+    <string name="qs_row_column_config">QS Tiles rows &amp; columns</string>
+    <string name="qs_rows_portrait_title">Rows (Portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (Landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (Portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (Landscape)</string>
     <!-- QS tiles mini mode -->
     <!-- QS footer warnings -->
     <!-- QS footer Running Services icon -->
