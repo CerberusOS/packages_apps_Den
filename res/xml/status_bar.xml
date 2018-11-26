@@ -31,6 +31,14 @@
         android:key="statusbar_battery_category"
         android:title="@string/status_bar_battery_category_title">
 
+   	<com.cerberusos.gear.preference.SecureSettingListPreference
+        	android:key="status_bar_battery_style"
+        	android:title="@string/battery_style_title"
+        	android:summary="@string/battery_style_summary"
+        	android:entries="@array/battery_style_entries"
+        	android:entryValues="@array/battery_style_values"
+        	android:defaultValue="0"/>
+
         <com.cerberusos.gear.preference.SystemSettingListPreference
             android:key="status_bar_show_battery_percent"
             android:title="@string/status_bar_battery_percentage_title"
