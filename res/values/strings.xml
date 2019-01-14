@@ -227,9 +227,12 @@
 
     <string name="lockscreen_title">Lockscreen</string>
     <string name="lockscreen_summary">Edit lockscreen appearance</string>
-    <string name="lockscreen_security_category">Security</string>
     <!-- Lockscreen Clock -->
     <string name="lockscreen_clock_category">Lockscreen Clock</string>
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
     <string name="lockscreen_clock_selection_title">Clock style</string>
     <string name="lockscreen_clock_selection_digital">Default</string>
     <string name="lockscreen_clock_selection_digital_bold">Digital (Bold)</string>
@@ -254,6 +257,9 @@
     <!-- Lockscreen notif count -->
     <!-- Power menu on secure lockscreen -->
     <!-- Disable QS on secure Lockscreen -->
+
+    <!--Lockscreen Security-->
+    <string name="lockscreen_security_category">Security</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
     <string name="fprint_sucess_vib_summary_on">Vibrate on successful fingerprint authentication enabled</string>
