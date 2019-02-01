@@ -28,6 +28,12 @@
         android:summary="@string/use_google_sans_summary"
         android:defaultValue="false" />
 
+    <com.cerberusos.den.preference.FontDialogPreference
+        android:key="custom_font"
+        android:icon="@drawable/ic_font"
+        android:title="@string/font_picker_title"
+        android:persistent="false" />
+
     <com.cerberusos.gear.preference.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"

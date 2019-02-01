@@ -17,14 +17,18 @@
 
 package com.cerberusos.den;
 
+import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.PreferenceFragment;
+import com.android.settingslib.CustomDialogPreference;
 
 import com.cerberusos.den.utils.Util;
+
+import java.util.UUID;
 
 public abstract class BaseSettingsFragment extends PreferenceFragment {
 
@@ -54,6 +58,20 @@ public abstract class BaseSettingsFragment extends PreferenceFragment {
         return Util.onPreferenceTreeClick(this, preference)
                 || super.onPreferenceTreeClick(preference);
     }
+
+    @Override
+    public void onDisplayPreferenceDialog(Preference preference) {
+        if (preference.getKey() == null) {
+            // Auto-key preferences that don't have a key, so the dialog can find them.
+            preference.setKey(UUID.randomUUID().toString());
+        }
+        if (preference instanceof CustomDialogPreference) {
+            DialogFragment f = CustomDialogPreference.CustomPreferenceDialogFragment
+                    .newInstance(preference.getKey());
+            f.setTargetFragment(this, 0);
+            f.show(getFragmentManager(), "dialog_preference");
+        } else super.onDisplayPreferenceDialog(preference);
+   }
 
     public void setMasterDependencyState(boolean enabled) {
         mMasterDependencyEnabled = enabled;

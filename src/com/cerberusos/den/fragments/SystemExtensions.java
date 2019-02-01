@@ -20,8 +20,13 @@ package com.cerberusos.den.fragments;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.content.res.Resources;
-
+import android.content.FontInfo;
+import android.content.IFontService;
+import android.content.pm.PackageManager;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import com.cerberusos.den.BaseSettingsFragment;
+import com.cerberusos.den.preference.FontDialogPreference;
 import com.cerberusos.den.R;
 import com.cerberusos.den.utils.Util;
 import android.util.Log;
@@ -38,6 +43,12 @@ public class SystemExtensions extends BaseSettingsFragment
 
     private static final String CERBERUS_USE_SANS_KEY = "persist.cerberus.use_google_sans";
 
+    private static final String KEY_FONT_PICKER_FRAGMENT_PREF = "custom_font";
+    private static final String SUBS_PACKAGE = "projekt.substratum";
+
+    private FontDialogPreference mFontPreference;
+    private IFontService mFontService;
+
     private SwitchPreference mCerberusUseGoogleSans;
     private Context mContext;
 
@@ -52,6 +63,8 @@ public class SystemExtensions extends BaseSettingsFragment
         super.onCreate(savedInstanceState);
 
         mContext = (Context) getActivity();
+
+        PackageManager pm = getActivity().getPackageManager();
 
         mCerberusUseGoogleSans = (SwitchPreference) findPreference("use_google_sans");
         if( mCerberusUseGoogleSans != null ) { 
@@ -84,6 +97,15 @@ public class SystemExtensions extends BaseSettingsFragment
 
         Preference systemAppRemover = findPreference(PREF_SYSTEM_APP_REMOVER);
         Util.requireRoot(getActivity(), systemAppRemover);
+
+        mFontPreference =  (FontDialogPreference) findPreference(KEY_FONT_PICKER_FRAGMENT_PREF);
+        mFontService = IFontService.Stub.asInterface(
+                 ServiceManager.getService("fontservice"));
+        if (!Util.isPackageInstalled(SUBS_PACKAGE,pm)) {
+            mFontPreference.setSummary(getCurrentFontInfo().fontName.replace("_", " "));
+        } else {
+            mFontPreference.setSummary(getActivity().getString(R.string.disable_fonts_installed_title));
+        }
     }
 
     @Override
@@ -101,5 +123,13 @@ public class SystemExtensions extends BaseSettingsFragment
         String text = value?"1":"0";
         Log.e("CerberusSystemTweaks", "setSystemPropertyBoolean: key=" + key + ", value=" + value);
         SystemProperties.set(key, text);
+    }
+
+    private FontInfo getCurrentFontInfo() {
+        try {
+            return mFontService.getFontInfo();
+        } catch (RemoteException e) {
+            return FontInfo.getDefaultFontInfo();
+        }
     }
 }
