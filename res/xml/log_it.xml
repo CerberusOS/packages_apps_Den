@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (C) 2017 AICP
+ * Copyright (C) 2019 CERBERUSOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
     android:title="@string/log_it_title">
 
     <ListPreference
-        android:key="baikalos_log_share_type"
+        android:key="cerberusos_log_share_type"
         android:title="@string/log_it_share_type_title"
         android:entries="@array/log_it_share_type_entries"
         android:entryValues="@array/log_it_share_type_values"
@@ -48,7 +48,7 @@
         android:defaultValue="false" />
 
     <Preference
-        android:key="baikalos_log_it_now"
+        android:key="cerberusos_log_it_now"
         android:title="@string/log_it_now_title"
         android:summary="@string/log_it_now_summary" />
 

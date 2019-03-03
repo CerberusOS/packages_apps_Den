@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--
 /**
- * Copyright (C) 2017 AICP
+ * Copyright (C) 2019 CERBERUSOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,18 +29,18 @@
 
 
     <string name="proximity_category">Proximity</string>
-    <string name="baikal_wakeup_proximity_enabled_title">Wakeup</string>
-    <string name="baikal_wakeup_proximity_enabled_summary">Wakeup on double Hand wave</string>
-    <string name="baikal_sleep_proximity_enabled_title">Sleep</string>
-    <string name="baikal_sleep_proximity_enabled_summary">Sleep on double Hand wave</string>
-    <string name="baikal_hall_sensor_enabled_title">HALL Sensor</string>
-    <string name="baikal_hall_sensor_enabled_summary">Enable HALL Sensor</string>
+    <string name="cerberus_wakeup_proximity_enabled_title">Wakeup</string>
+    <string name="cerberus_wakeup_proximity_enabled_summary">Wakeup on double Hand wave</string>
+    <string name="cerberus_sleep_proximity_enabled_title">Sleep</string>
+    <string name="cerberus_sleep_proximity_enabled_summary">Sleep on double Hand wave</string>
+    <string name="cerberus_hall_sensor_enabled_title">HALL Sensor</string>
+    <string name="cerberus_hall_sensor_enabled_summary">Enable HALL Sensor</string>
 
-    <string name="baikal_lid_sensor_enabled_title">Enable Smart Cover</string>
-    <string name="baikal_lid_sensor_enabled_summary">Enable Smart Cover</string>
+    <string name="cerberus_lid_sensor_enabled_title">Enable Smart Cover</string>
+    <string name="cerberus_lid_sensor_enabled_summary">Enable Smart Cover</string>
 
-    <string name="baikal_lid_sensor_reverse_title">Reverse Smart Cover</string>
-    <string name="baikal_lid_sensor_reverse_summary">Reverse Smart Cover Action</string>
+    <string name="cerberus_lid_sensor_reverse_title">Reverse Smart Cover</string>
+    <string name="cerberus_lid_sensor_reverse_summary">Reverse Smart Cover Action</string>
 
     <string name="use_google_sans_title">Google Sans default</string>
     <string name="use_google_sans_summary">Use Google Sans as the default system font. Reboot required!</string>

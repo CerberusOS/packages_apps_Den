@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (C) 2018 BaikalOS
+ * Copyright (C) 2018 CerberusOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,26 +18,26 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:baikalosextras="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/vibrator_title">
 
     <PreferenceCategory
         android:key="incall_vibration_category"
         android:title="@string/incall_vibration_category">
 
-        <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+        <com.cerberusos.gear.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:summary="@string/incall_vibrate_connect_summary"
             android:defaultValue="false" />
 
-        <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+        <com.cerberusos.gear.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:summary="@string/incall_vibrate_call_wait_summary"
             android:defaultValue="false" />
 
-        <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+        <com.cerberusos.gear.preference.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:summary="@string/incall_vibrate_disconnect_summary"

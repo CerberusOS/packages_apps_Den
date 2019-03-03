@@ -16,7 +16,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:baikalosextras="http://schemas.android.com/apk/res/ru.baikalos.extras"
+    xmlns:den="http://schemas.android.com/apk/res/com.cerberusos.den"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -41,7 +41,7 @@
         android:text="@string/shortcut_action_disable_message"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:visibility="gone" />
-    <ru.baikalos.extras.dslv.DragSortListView
+    <com.cerberusos.den.dslv.DragSortListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -50,18 +50,18 @@
         android:paddingLeft="0dp"
         android:layout_margin="0dp"
         android:dividerHeight="1dp"
-        baikalosextras:dragEnabled="true"
-        baikalosextras:collapsedHeight="2dp"
-        baikalosextras:dragScrollStart="0.33"
-        baikalosextras:maxDragScrollSpeed="0.5"
-        baikalosextras:floatAlpha="0.6"
-        baikalosextras:slideShuffleSpeed="0.3"
-        baikalosextras:trackDragSort="false"
-        baikalosextras:useDefaultController="true"
-        baikalosextras:dragHandleId="@id/drag_handle"
-        baikalosextras:sortEnabled="true"
-        baikalosextras:removeEnabled="true"
-        baikalosextras:dragStartMode="onMove"
-        baikalosextras:removeMode="flingRemove"
-        baikalosextras:floatBackgroundColor="?android:attr/colorBackgroundFloating" />
+        den:dragEnabled="true"
+        den:collapsedHeight="2dp"
+        den:dragScrollStart="0.33"
+        den:maxDragScrollSpeed="0.5"
+        den:floatAlpha="0.6"
+        den:slideShuffleSpeed="0.3"
+        den:trackDragSort="false"
+        den:useDefaultController="true"
+        den:dragHandleId="@id/drag_handle"
+        den:sortEnabled="true"
+        den:removeEnabled="true"
+        den:dragStartMode="onMove"
+        den:removeMode="flingRemove"
+        den:floatBackgroundColor="?android:attr/colorBackgroundFloating" />
 </LinearLayout>

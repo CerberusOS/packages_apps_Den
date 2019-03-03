@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (C) 2017-2018 AICP
+ * Copyright (C) 2019 CERBERUSOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:baikalosextras="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/system_animations_title">
 
     <Preference
@@ -26,7 +26,7 @@
         android:title="@string/custom_bootanimation_title"
         android:summary="@string/custom_bootanimation_summary" />
 
-    <ru.baikalos.gear.preference.SystemSettingIntListPreference
+    <com.cerberusos.gear.preference.SystemSettingIntListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
         android:dialogTitle="@string/screen_off_animation_title"

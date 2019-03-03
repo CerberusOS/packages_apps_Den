@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (C) 2017 AICP
+ * Copyright (C) 2019 CERBERUSOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,22 +18,22 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:baikalosextras="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/notifications_title">
 
-    <ru.baikalos.gear.preference.GlobalSettingSwitchPreference
+    <com.cerberusos.gear.preference.GlobalSettingSwitchPreference
         android:key="heads_up_notifications_enabled"
         android:title="@string/notification_heads_up_title"
         android:summary="@string/notification_heads_up_summary"
         android:defaultValue="true"
         android:disableDependentsState="true" />
 
-    <ru.baikalos.extras.preference.SystemSettingMasterSwitchPreference
+    <com.cerberusos.den.preference.SystemSettingMasterSwitchPreference
         android:key="status_bar_show_ticker"
         android:title="@string/status_bar_show_ticker_title"
         android:summary="@string/status_bar_show_ticker_summary"
         android:defaultValue="false"
-        android:fragment="ru.baikalos.extras.fragments.StatusBarTicker"
+        android:fragment="com.cerberusos.den.fragments.StatusBarTicker"
         android:dependency="heads_up_notifications_enabled" />
 
 </PreferenceScreen>

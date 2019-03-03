@@ -2,7 +2,7 @@
 <!--
 /*
 ** Copyright 2014, The Android Open Source Project
-** Copyright 2017, BAIKALOS
+** Copyright 2017, CerberusOS
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <ru.baikalos.extras.widget.SwitchBar
+    <com.cerberusos.den.widget.SwitchBar
         android:id="@+id/switch_bar"
         android:layout_height="?android:attr/actionBarSize"
         android:layout_width="match_parent"

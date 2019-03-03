@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (C) 2017-2018 AICP
+ * Copyright (C) 2019 CERBERUSOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,9 +19,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/app_name">
 
-    <!-- BaikalOS logo -->
-    <ru.baikalos.gear.preference.LongClickablePreference
-        android:key="baikalos_logo"
+    <!-- CerberusOS logo -->
+    <com.cerberusos.gear.preference.LongClickablePreference
+        android:key="cerberusos_logo"
         android:layout="@layout/dashboard_logo" />
 
     <PreferenceCategory
@@ -49,8 +49,8 @@
             android:title="@string/app_settings_title"
             android:summary="@string/app_settings_summary" >
             <intent 
-                android:targetPackage="ru.baikalos.extras"
-                android:targetClass="ru.baikalos.extras.AppProfilesActivity"/>
+                android:targetPackage="com.cerberusos.den"
+                android:targetClass="com.cerberusos.den.AppProfilesActivity"/>
         </Preference>
 
 
@@ -62,19 +62,19 @@
             android:title="@string/button_settings_title"
             android:summary="@string/button_settings_title_summary"
             android:icon="@drawable/ic_settings_buttons"
-            android:fragment="ru.baikalos.extras.fragments.ButtonsSettings" />
+            android:fragment="com.cerberusos.den.fragments.ButtonsSettings" />
 
         <PreferenceScreen
             android:title="@string/navigation_title"
             android:summary="@string/navigation_summary"
             android:icon="@drawable/ic_settings_navbar"
-            android:fragment="ru.baikalos.extras.fragments.Navigation" />
+            android:fragment="com.cerberusos.den.fragments.Navigation" />
 
         <PreferenceScreen
             android:title="@string/recents_title"
             android:summary="@string/recents_summary"
             android:icon="@drawable/ic_settings_recents"
-            android:fragment="ru.baikalos.extras.fragments.Recents" />
+            android:fragment="com.cerberusos.den.fragments.Recents" />
 
     </PreferenceCategory>
 
@@ -85,43 +85,43 @@
             android:title="@string/status_bar_title"
             android:summary="@string/status_bar_summary"
             android:icon="@drawable/ic_settings_status_bar"
-            android:fragment="ru.baikalos.extras.fragments.StatusBar" />
+            android:fragment="com.cerberusos.den.fragments.StatusBar" />
 
         <PreferenceScreen
             android:title="@string/notifications_title"
             android:summary="@string/notifications_summary"
             android:icon="@drawable/ic_settings_notifications"
-            android:fragment="ru.baikalos.extras.fragments.Notifications" />
+            android:fragment="com.cerberusos.den.fragments.Notifications" />
 
         <!-- PreferenceScreen
             android:title="@string/quick_settings_title"
             android:summary="@string/quick_settings_summary"
             android:icon="@drawable/ic_settings_quick_settings"
-            android:fragment="ru.baikalos.extras.fragments.QuickSettings" /-->
+            android:fragment="com.cerberusos.den.fragments.QuickSettings" /-->
 
         <PreferenceScreen
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_summary"
             android:icon="@drawable/ic_settings_lockscreen"
-            android:fragment="ru.baikalos.extras.fragments.Lockscreen" />
+            android:fragment="com.cerberusos.den.fragments.Lockscreen" />
 
         <!-- PreferenceScreen
             android:title="@string/panel_porn_title"
             android:summary="@string/panel_porn_summary"
             android:icon="@drawable/ic_settings_panel_porn"
-            android:fragment="ru.baikalos.extras.fragments.PanelPorn" / -->
+            android:fragment="com.cerberusos.den.fragments.PanelPorn" / -->
 
         <PreferenceScreen
             android:title="@string/theming_title"
             android:summary="@string/theming_summary"
             android:icon="@drawable/ic_settings_theming"
-            android:fragment="ru.baikalos.extras.fragments.Theming" />
+            android:fragment="com.cerberusos.den.fragments.Theming" />
 
         <!-- PreferenceScreen
             android:title="@string/other_ui_title"
             android:summary="@string/other_ui_summary"
             android:icon="@drawable/ic_settings_other_ui"
-            android:fragment="ru.baikalos.extras.fragments.OtherUi" / -->
+            android:fragment="com.cerberusos.den.fragments.OtherUi" / -->
 
     </PreferenceCategory>
 
@@ -132,44 +132,44 @@
             android:title="@string/system_animations_title"
             android:summary="@string/system_animations_summary"
             android:icon="@drawable/ic_settings_system_animations"
-            android:fragment="ru.baikalos.extras.fragments.SystemAnimations" />
+            android:fragment="com.cerberusos.den.fragments.SystemAnimations" />
 
         <!--PreferenceScreen
             android:title="@string/system_behaviour_title"
             android:summary="@string/system_behaviour_summary"
             android:icon="@drawable/ic_settings_system_behaviour"
-            android:fragment="ru.baikalos.extras.fragments.SystemBehaviour" / -->
+            android:fragment="com.cerberusos.den.fragments.SystemBehaviour" / -->
 
         <PreferenceScreen
             android:title="@string/system_extensions_title"
             android:summary="@string/system_extensions_summary"
             android:icon="@drawable/ic_settings_system_extensions"
-            android:fragment="ru.baikalos.extras.fragments.SystemExtensions" />
+            android:fragment="com.cerberusos.den.fragments.SystemExtensions" />
 
 
         <PreferenceScreen
             android:title="@string/audio_tweaks_title"
             android:summary="@string/audio_tweaks_summary"
             android:icon="@drawable/ic_settings_system_audio"
-            android:fragment="ru.baikalos.extras.fragments.AudioTweaks" />
+            android:fragment="com.cerberusos.den.fragments.AudioTweaks" />
 
         <PreferenceScreen
             android:title="@string/powersave_title"
             android:summary="@string/powersave_summary"
             android:icon="@drawable/ic_settings_system_powersave"
-            android:fragment="ru.baikalos.extras.fragments.PowerSave" />
+            android:fragment="com.cerberusos.den.fragments.PowerSave" />
 
         <PreferenceScreen
             android:title="@string/torch_title"
             android:summary="@string/torch_summary"
             android:icon="@drawable/ic_settings_torch"
-            android:fragment="ru.baikalos.extras.fragments.Torch" />
+            android:fragment="com.cerberusos.den.fragments.Torch" />
 
         <PreferenceScreen
             android:title="@string/vibrator_title"
             android:summary="@string/vibrator_summary"
             android:icon="@drawable/ic_settings_vibrator"
-            android:fragment="ru.baikalos.extras.fragments.Vibrator" />
+            android:fragment="com.cerberusos.den.fragments.Vibrator" />
 
     </PreferenceCategory>
 
@@ -180,12 +180,12 @@
             android:title="@string/about_title"
             android:summary="@string/about_summary"
             android:icon="@drawable/ic_settings_about"
-            android:fragment="ru.baikalos.extras.fragments.About" />
+            android:fragment="com.cerberusos.den.fragments.About" />
 
         <Preference
-            android:key="baikalos_ota"
-            android:title="@string/baikalos_ota_title"
-            android:summary="@string/baikalos_ota_summary"
+            android:key="cerberusos_ota"
+            android:title="@string/cerberusos_ota_title"
+            android:summary="@string/cerberusos_ota_summary"
             android:icon="@drawable/ic_settings_ota" />
 
         <PreferenceScreen
@@ -193,13 +193,13 @@
             android:title="@string/log_it_title"
             android:summary="@string/log_it_summary"
             android:icon="@drawable/ic_settings_log_it"
-            android:fragment="ru.baikalos.extras.fragments.LogIt" />
+            android:fragment="com.cerberusos.den.fragments.LogIt" />
 
         <PreferenceScreen
             android:title="@string/ae_settings_title"
             android:summary="@string/ae_settings_summary"
             android:icon="@drawable/ic_settings_ae_customization"
-            android:fragment="ru.baikalos.extras.fragments.AeSettings" />
+            android:fragment="com.cerberusos.den.fragments.AeSettings" />
 
     </PreferenceCategory>
 </PreferenceScreen>

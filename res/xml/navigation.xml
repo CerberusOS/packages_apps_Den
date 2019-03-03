@@ -21,19 +21,19 @@
     android:key="navigation_key"
     android:title="@string/navigation_title">
 
-     <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+     <com.cerberusos.gear.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="0" />
 
-     <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+     <com.cerberusos.gear.preference.SystemSettingSwitchPreference
         android:key="navigation_bar_enabled"
         android:title="@string/navigation_bar_title"
         android:summary="@string/navigation_bar_title_summary"
         android:defaultValue="0" />
 
-    <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+    <com.cerberusos.gear.preference.SystemSettingSwitchPreference
         android:key="use_bottom_gesture_navigation"
         android:title="@string/use_bottom_gesture_title"
         android:summary="@string/use_bottom_gesture_summary"

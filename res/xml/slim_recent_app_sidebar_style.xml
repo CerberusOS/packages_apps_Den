@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (C) 2017 AICP
+ * Copyright (C) 2019 CERBERUSOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,38 +18,38 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:baikalosextras="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/recent_app_sidebar_title">
 
-    <ru.baikalos.gear.preference.SystemSettingSeekBarPreference
+    <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
             android:key="recent_app_sidebar_scale_factor"
             android:title="@string/recent_app_sidebar_scale_title"
             android:defaultValue="100"
             android:min="60"
             android:max="160"
-            baikalosextras:interval="5"
-            baikalosextras:unitsRight="%" />
+            app:interval="5"
+            app:unitsRight="%" />
 
-    <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+    <com.cerberusos.gear.preference.SystemSettingSwitchPreference
             android:key="recent_app_sidebar_disable_labels"
             android:title="@string/recent_app_sidebar_hide_labels_title"
             android:disableDependentsState="true"
             android:defaultValue="false" />
 
-    <ru.baikalos.gear.preference.SystemSettingColorPickerPreference
+    <com.cerberusos.gear.preference.SystemSettingColorPickerPreference
             android:key="recent_app_sidebar_text_color"
             android:title="@string/recent_app_sidebar_label_color_title"
             android:defaultValue="0x00ffffff"
             alphaSlider="false"
             android:dependency="recent_app_sidebar_disable_labels" />
 
-    <ru.baikalos.gear.preference.SystemSettingColorPickerPreference
+    <com.cerberusos.gear.preference.SystemSettingColorPickerPreference
             android:key="recent_app_sidebar_bg_color"
             android:title="@string/recent_app_sidebar_bg_color_title"
             android:defaultValue="0x00ffffff"
             alphaSlider="true" />
 
-    <ru.baikalos.gear.preference.SystemSettingSwitchPreference
+    <com.cerberusos.gear.preference.SystemSettingSwitchPreference
             android:key="recent_app_sidebar_open_simultaneously"
             android:title="@string/recent_app_sidebar_open_simultaneously_title"
             android:summary="@string/recent_app_sidebar_open_simultaneously_summary"

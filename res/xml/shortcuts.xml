@@ -5,12 +5,12 @@
         android:enabled="true"
         android:icon="@drawable/ic_launcher_shortcut_changelog"
         android:shortcutDisabledMessage="@string/launcher_shortcut_disabled_message"
-        android:shortcutLongLabel="@string/baikalos_changelog_title"
-        android:shortcutShortLabel="@string/baikalos_changelog_title">
+        android:shortcutLongLabel="@string/cerberusos_changelog_title"
+        android:shortcutShortLabel="@string/cerberusos_changelog_title">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="ru.baikalos.extras.changelog.ChangelogActivity"
-            android:targetPackage="ru.baikalos.extras" />
+            android:targetClass="com.cerberusos.den.changelog.ChangelogActivity"
+            android:targetPackage="com.cerberusos.den" />
     </shortcut>
 
     <shortcut
@@ -18,8 +18,8 @@
         android:enabled="true"
         android:icon="@drawable/ic_launcher_shortcut_gerrit"
         android:shortcutDisabledMessage="@string/launcher_shortcut_disabled_message"
-        android:shortcutLongLabel="@string/baikalos_gerrit_title"
-        android:shortcutShortLabel="@string/baikalos_gerrit_title">
+        android:shortcutLongLabel="@string/cerberusos_gerrit_title"
+        android:shortcutShortLabel="@string/cerberusos_gerrit_title">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="http://gerrit.baikalos-rom.com"/>
