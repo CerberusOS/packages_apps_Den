@@ -76,8 +76,10 @@ public class SystemExtensions extends BaseSettingsFragment
         if( !mLidSensor ) {
             Preference mLidSensorPref = findPreference("cerberus_lid_sensor_enabled");
             Preference mLidReversePref = findPreference("cerberus_lid_sensor_reverse");
+            Preference mLidIgnorePref = findPreference("cerberus_lid_ignore_wake");
             mLidSensorPref.setVisible(false);
             mLidReversePref.setVisible(false);
+            mLidIgnorePref.setVisible(false);
         }
 
         Preference systemAppRemover = findPreference(PREF_SYSTEM_APP_REMOVER);
