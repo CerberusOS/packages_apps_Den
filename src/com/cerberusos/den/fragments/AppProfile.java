@@ -85,7 +85,11 @@ public class AppProfile extends BaseSettingsFragment
         mContext = (Context) getActivity();
         final Resources res = getActivity().getResources();
 
+        boolean supportCameraHAL1 = res.getBoolean(
+                com.android.internal.R.bool.config_supportCameraHAL1);
+
         boolean perfProf  = SystemProperties.get("cerberus.eng.perf", "0").equals("1") ||
+
                             SystemProperties.get("spectrum.support", "0").equals("1");
 
         boolean thermProf  = SystemProperties.get("cerberus.eng.therm", "0").equals("1");
@@ -125,6 +129,9 @@ public class AppProfile extends BaseSettingsFragment
 
 
         mAppCameraHal1 = (SwitchPreference) findPreference(APP_PROFILE_CAMERA_HAL1);
+        if( !supportCameraHAL1 ) {
+            mAppCameraHal1.setVisible(false);
+        } else {
         if( mAppCameraHal1 != null ) { 
             mAppCameraHal1.setChecked(mCerberusService.getAppOption(mPackageName,CerberusServiceManager.OP_CAMERA_HAL1) == 1);
             mAppCameraHal1.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -138,6 +145,7 @@ public class AppProfile extends BaseSettingsFragment
                 return true;
               }
             });
+        }
         }
 
 
