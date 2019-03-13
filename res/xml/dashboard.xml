@@ -20,9 +20,9 @@
     android:title="@string/app_name">
 
     <!-- CerberusOS logo -->
-    <com.cerberusos.gear.preference.LongClickablePreference
+    <!-- <com.cerberusos.gear.preference.LongClickablePreference
         android:key="cerberusos_logo"
-        android:layout="@layout/dashboard_logo" />
+        android:layout="@layout/dashboard_logo" /> -->
 
     <PreferenceCategory
         android:title="@string/device_part_category">
@@ -176,11 +176,11 @@
     <PreferenceCategory
         android:title="@string/other_category">
 
-        <PreferenceScreen
+        <!-- <PreferenceScreen
             android:title="@string/about_title"
             android:summary="@string/about_summary"
             android:icon="@drawable/ic_settings_about"
-            android:fragment="com.cerberusos.den.fragments.About" />
+            android:fragment="com.cerberusos.den.fragments.About" /> -->
 
         <Preference
             android:key="cerberusos_ota"
@@ -188,12 +188,12 @@
             android:summary="@string/cerberusos_ota_summary"
             android:icon="@drawable/ic_settings_ota" />
 
-        <PreferenceScreen
+        <!-- <PreferenceScreen
             android:key="log_it"
             android:title="@string/log_it_title"
             android:summary="@string/log_it_summary"
             android:icon="@drawable/ic_settings_log_it"
-            android:fragment="com.cerberusos.den.fragments.LogIt" />
+            android:fragment="com.cerberusos.den.fragments.LogIt" /> -->
 
         <PreferenceScreen
             android:title="@string/ae_settings_title"

@@ -45,9 +45,9 @@ import java.util.Random;
 
 public class Dashboard extends BaseSettingsFragment {
 
-    private static final String PREF_CERBERUSOS_LOGO = "cerberusos_logo";
+    //private static final String PREF_CERBERUSOS_LOGO = "cerberusos_logo";
     private static final String PREF_CERBERUSOS_OTA = "cerberusos_ota";
-    private static final String PREF_LOG_IT = "log_it";
+    //private static final String PREF_LOG_IT = "log_it";
 
     private static final String PREF_CERBERUSOS_PARTS = "device_part";
     private static final String PREF_CERBERUSOS_PARTS_PACKAGE_NAME = "org.omnirom.device";
@@ -56,7 +56,7 @@ public class Dashboard extends BaseSettingsFragment {
     private static final Intent INTENT_OTA = new Intent().setComponent(new ComponentName(
             Constants.CERBERUSOS_OTA_PACKAGE, Constants.CERBERUSOS_OTA_ACTIVITY));
 
-    private LongClickablePreference mCerberusOSLogo;
+    //private LongClickablePreference mCerberusOSLogo;
     private Preference mCerberusOSOTA;
     private Preference mCerberusOSParts;
 
@@ -86,7 +86,7 @@ public class Dashboard extends BaseSettingsFragment {
             }
         }
 
-        mCerberusOSLogo = (LongClickablePreference) findPreference(PREF_CERBERUSOS_LOGO);
+        //mCerberusOSLogo = (LongClickablePreference) findPreference(PREF_CERBERUSOS_LOGO);
 
         mCerberusOSOTA = findPreference(PREF_CERBERUSOS_OTA);
         if (!Util.isPackageEnabled(Constants.CERBERUSOS_OTA_PACKAGE, pm)) {
@@ -99,13 +99,13 @@ public class Dashboard extends BaseSettingsFragment {
             mCerberusOSParts.getParent().removePreference(mCerberusOSParts);
         }
 
-        Preference logIt = findPreference(PREF_LOG_IT);
-        Util.requireRoot(getActivity(), logIt);
+        //Preference logIt = findPreference(PREF_LOG_IT);
+        //Util.requireRoot(getActivity(), logIt);
 
-        mCerberusOSLogo.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+        /*mCerberusOSLogo.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                /*int firstRandom = mRandom.nextInt(91 - 0);
+                int firstRandom = mRandom.nextInt(91 - 0);
                 int secondRandom = mRandom.nextInt(181 - 90) + 90;
                 int thirdRandom = mRandom.nextInt(181 - 0);
 
@@ -126,15 +126,15 @@ public class Dashboard extends BaseSettingsFragment {
                 ps.setFadeOut(200, new AccelerateInterpolator());
                 ps.oneShot(getView(), 100);
 
-                mCerberusOSLogo.setLongClickBurst(2000/((++mLogoClickCount)%5+1));*/
+                mCerberusOSLogo.setLongClickBurst(2000/((++mLogoClickCount)%5+1));
                 return true;
             }
-        });
-        mCerberusOSLogo.setOnLongClickListener(R.id.logo_view, 1000,
+        });*/
+        /*mCerberusOSLogo.setOnLongClickListener(R.id.logo_view, 1000,
                 new Preference.OnPreferenceClickListener() {
                         @Override
                         public boolean onPreferenceClick(Preference preference) {
-                            /*int firstRandom = mRandom.nextInt(91 - 0);
+                            int firstRandom = mRandom.nextInt(91 - 0);
                             int secondRandom = mRandom.nextInt(181 - 90) + 90;
                             int thirdRandom = mRandom.nextInt(181 - 0);
 
@@ -147,15 +147,15 @@ public class Dashboard extends BaseSettingsFragment {
                             ps.setAcceleration(0.0001f, thirdRandom);
                             ps.setRotationSpeedRange(firstRandom, secondRandom);
                             ps.setFadeOut(1000, new AccelerateInterpolator());
-                            ps.oneShot(getView(), 100);*/
+                            ps.oneShot(getView(), 100);
                             return true;
                         }
-                });
+                });*/
     }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mCerberusOSOTA || preference == mCerberusOSLogo) {
+        if (preference == mCerberusOSOTA){ // || preference == mCerberusOSLogo) {
             startActivity(INTENT_OTA);
             return true;
         } else {
