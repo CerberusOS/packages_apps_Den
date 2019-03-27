@@ -17,14 +17,35 @@
 
 package com.cerberusos.den.fragments;
 
+import android.os.Bundle;
+import android.os.UserHandle;
+import android.content.ContentResolver;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.provider.Settings;
 import com.cerberusos.den.BaseSettingsFragment;
 import com.cerberusos.den.R;
 
-public class QuickSettings extends BaseSettingsFragment {
+public class QuickSettings extends BaseSettingsFragment implements OnPreferenceChangeListener {
 
     @Override
     protected int getPreferenceResource() {
         return R.xml.quick_settings;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+    }
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        return false;
     }
 
 }
