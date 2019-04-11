@@ -45,9 +45,6 @@
     <string name="cerberus_lid_ignore_wake_title">Ignore Wake</string>
     <string name="cerberus_lid_ignore_wake_summary">Ignore accidential wake events while Smart Cover is closed</string>
 
-    <string name="use_google_sans_title">Google Sans default</string>
-    <string name="use_google_sans_summary">Use Google Sans as the default system font. Reboot required!</string>
-
     <!-- Three Finger Swipe to Screenshot  -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe three fingers to take screenshot</string>

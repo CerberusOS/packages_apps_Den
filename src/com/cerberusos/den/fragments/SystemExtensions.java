@@ -31,17 +31,11 @@ import com.cerberusos.den.R;
 import com.cerberusos.den.utils.Util;
 import android.util.Log;
 
-import android.support.v14.preference.SwitchPreference;
-
 import android.content.Context;
-import android.os.SystemProperties;
 
-public class SystemExtensions extends BaseSettingsFragment 
-            implements Preference.OnPreferenceChangeListener{
+public class SystemExtensions extends BaseSettingsFragment{
 
     private static final String PREF_SYSTEM_APP_REMOVER = "system_app_remover";
-
-    private static final String CERBERUS_USE_SANS_KEY = "persist.cerberus.use_google_sans";
 
     private static final String KEY_FONT_PICKER_FRAGMENT_PREF = "custom_font";
     private static final String SUBS_PACKAGE = "projekt.substratum";
@@ -49,7 +43,6 @@ public class SystemExtensions extends BaseSettingsFragment
     private FontDialogPreference mFontPreference;
     private IFontService mFontService;
 
-    private SwitchPreference mCerberusUseGoogleSans;
     private Context mContext;
 
 
@@ -65,12 +58,6 @@ public class SystemExtensions extends BaseSettingsFragment
         mContext = (Context) getActivity();
 
         PackageManager pm = getActivity().getPackageManager();
-
-        mCerberusUseGoogleSans = (SwitchPreference) findPreference("use_google_sans");
-        if( mCerberusUseGoogleSans != null ) { 
-            mCerberusUseGoogleSans.setChecked(SystemProperties.getBoolean(CERBERUS_USE_SANS_KEY, false));
-            mCerberusUseGoogleSans.setOnPreferenceChangeListener(this);
-        }
 
 
         final Resources res = getActivity().getResources();
@@ -106,23 +93,6 @@ public class SystemExtensions extends BaseSettingsFragment
         } else {
             mFontPreference.setSummary(getActivity().getString(R.string.disable_fonts_installed_title));
         }
-    }
-
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mCerberusUseGoogleSans) {
-            ((SwitchPreference)preference).setChecked((Boolean) newValue);
-            setSystemPropertyBoolean(CERBERUS_USE_SANS_KEY, (Boolean) newValue);
-            return true;
-        } else {
-            return true;
-        }
-    }
-
-    private void setSystemPropertyBoolean(String key, boolean value) {
-        String text = value?"1":"0";
-        Log.e("CerberusSystemTweaks", "setSystemPropertyBoolean: key=" + key + ", value=" + value);
-        SystemProperties.set(key, text);
     }
 
     private FontInfo getCurrentFontInfo() {
