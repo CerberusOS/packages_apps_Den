@@ -246,6 +246,7 @@
     <string name="lockscreen_clock_selection_dot">Analog (Dot)</string>
     <string name="lockscreen_clock_selection_spectrum">Analog (Spectrum)</string>
     <string name="lockscreen_clock_selection_sneeky">Analog (Sneeky)</string>
+    <string name="lockscreen_clock_selection_text">Text (Android Q)</string>
 
     <!-- Double tap to sleep on lockscreen -->
     <!-- Media art -->
