@@ -74,6 +74,13 @@
     <string name="battery_blend_end">Full</string>
     <string name="battery_blend_between">Between</string>
 
+    <!-- StatusBar Battery -->
+    <string name="status_bar_battery_category_title">Battery</string>
+    <string name="status_bar_battery_percentage_title">Show battery percentage</string>
+    <string name="status_bar_battery_percentage_summary">Show battery level percentage near the icon</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <!-- StatusBar weather settings -->
     <!-- Smart pulldown-->
     <string name="smart_pulldown_dismissable">no dismissable notifications</string>
