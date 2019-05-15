@@ -25,6 +25,7 @@
         android:layout="@layout/dashboard_logo" /> -->
 
     <PreferenceCategory
+        android:key="device_part_cat"
         android:title="@string/device_part_category">
 
         <!-- Device Part -->

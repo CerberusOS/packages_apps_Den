@@ -49,7 +49,7 @@ public class Dashboard extends BaseSettingsFragment {
     private static final String PREF_CERBERUSOS_OTA = "cerberusos_ota";
     //private static final String PREF_LOG_IT = "log_it";
 
-    private static final String PREF_CERBERUSOS_PARTS = "device_part";
+    private static final String PREF_CERBERUSOS_PARTS = "device_part_cat";
     private static final String PREF_CERBERUSOS_PARTS_PACKAGE_NAME = "org.omnirom.device";
 
 
@@ -74,18 +74,6 @@ public class Dashboard extends BaseSettingsFragment {
 
         PackageManager pm = getActivity().getPackageManager();
 
-        boolean perfProf  = SystemProperties.get("cerberus.eng.perf", "0").equals("1") || 
-                            SystemProperties.get("spectrum.support", "0").equals("1");
-        boolean thermProf  = SystemProperties.get("cerberus.eng.therm", "0").equals("1");
-
-        Preference profilesCategory = findPreference("app_setings_cat");
-
-        if( !perfProf && !thermProf ) {
-            if( profilesCategory != null ) {
-                getPreferenceScreen().removePreference(profilesCategory);
-            }
-        }
-
         //mCerberusOSLogo = (LongClickablePreference) findPreference(PREF_CERBERUSOS_LOGO);
 
         mCerberusOSOTA = findPreference(PREF_CERBERUSOS_OTA);
@@ -95,8 +83,8 @@ public class Dashboard extends BaseSettingsFragment {
 
         // DeviceParts
         mCerberusOSParts = findPreference(PREF_CERBERUSOS_PARTS);
-        if (!Util.isPackageEnabled(PREF_CERBERUSOS_PARTS_PACKAGE_NAME, pm)) {
-            mCerberusOSParts.getParent().removePreference(mCerberusOSParts);
+        if (!Util.isPackageEnabled(PREF_CERBERUSOS_PARTS_PACKAGE_NAME, pm) && mCerberusOSParts != null) {
+            getPreferenceScreen().removePreference(mCerberusOSParts);
         }
 
         //Preference logIt = findPreference(PREF_LOG_IT);

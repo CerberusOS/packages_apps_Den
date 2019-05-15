@@ -70,7 +70,7 @@ public class AppProfile extends BaseSettingsFragment
     ICerberusServiceController mCerberusService;
 
     public AppProfile(String packageName) {
-        mPackageName = packageName; 
+        mPackageName = packageName;
     }
 
     @Override
@@ -110,7 +110,7 @@ public class AppProfile extends BaseSettingsFragment
         try {
 
         mAppRestricted = (SwitchPreference) findPreference(APP_PROFILE_RESTRICTED);
-        if( mAppRestricted != null ) { 
+        if( mAppRestricted != null ) {
             mAppRestricted.setChecked(mCerberusService.isAppRestrictedProfile(mPackageName));
             mAppRestricted.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
               public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -132,7 +132,7 @@ public class AppProfile extends BaseSettingsFragment
         if( !supportCameraHAL1 ) {
             mAppCameraHal1.setVisible(false);
         } else {
-        if( mAppCameraHal1 != null ) { 
+        if( mAppCameraHal1 != null ) {
             mAppCameraHal1.setChecked(mCerberusService.getAppOption(mPackageName,CerberusServiceManager.OP_CAMERA_HAL1) == 1);
             mAppCameraHal1.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
               public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -150,7 +150,7 @@ public class AppProfile extends BaseSettingsFragment
 
 
         mAppPerfProfile = (ListPreference) findPreference(APP_PROFILE_PERF);
-        if( mAppPerfProfile != null ) { 
+        if( mAppPerfProfile != null ) {
             if(!perfProf) {
                 mAppPerfProfile.setVisible(false);
             } else {
@@ -212,7 +212,6 @@ public class AppProfile extends BaseSettingsFragment
                 });
             }
 
-        
         } catch(RemoteException re) {
             Log.e(TAG, "onCreate: Fatal! exception", re );
         }
