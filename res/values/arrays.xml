@@ -133,6 +133,7 @@
         <item>@string/theming_accent_gold</item>
         <item>@string/theming_accent_greenlight</item>
         <item>@string/theming_accent_lime</item>
+        <item>@string/theming_accent_oneplusred</item>
         <item>@string/theming_accent_orange</item>
         <item>@string/theming_accent_oxygen</item>
         <item>@string/theming_accent_pink</item>
@@ -153,6 +154,7 @@
         <item>7</item> <!-- gold -->
         <item>2</item> <!-- green light -->
         <item>3</item> <!-- lime -->
+        <item>17</item> <!-- oneplus red -->
         <item>8</item> <!-- orange -->
         <item>9</item> <!-- oxygen -->
         <item>10</item> <!--pink -->
