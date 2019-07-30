@@ -382,7 +382,7 @@
     <!-- Den settings -->
 
     <string name="ae_settings_title">Den customization</string>
-    <string name="ae_settings_summary">Customize the look and behaviour of Cerberus\' Den</string>
+    <string name="ae_settings_summary">Customize the look and behaviour of Den</string>
 
     <string name="theme_title">Theme</string>
     <string name="theme_default">Automatic</string>
@@ -479,7 +479,7 @@
 
     <!-- Navigation-->
     <string name="navigation_title">Navigation</string>
-    <string name="navigation_summary">Stock/Smartbar/Fling/Gestures</string>
+    <string name="navigation_summary">Stock Navigation/Gestures</string>
 
     <!-- Navigation bar -->
     <!-- DUI -->
@@ -611,6 +611,6 @@
 
     <string name="app_settings_category">Applications Settings</string>
     <string name="app_settings_title">Applications Profiles</string>
-    <string name="app_settings_summary">Choose per-app settings for Battery, Performance, Thermal, etc...</string>
+    <string name="app_settings_summary">Choose per-app settings</string>
 
 </resources>
