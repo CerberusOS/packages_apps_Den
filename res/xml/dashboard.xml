@@ -47,6 +47,7 @@
 
         <Preference
             android:key="app_setings"
+            android:icon="@drawable/ic_application_profile"
             android:title="@string/app_settings_title"
             android:summary="@string/app_settings_summary" >
             <intent 
