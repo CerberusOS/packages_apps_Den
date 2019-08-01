@@ -178,11 +178,11 @@
     <PreferenceCategory
         android:title="@string/other_category">
 
-        <!-- <PreferenceScreen
+        <PreferenceScreen
             android:title="@string/about_title"
             android:summary="@string/about_summary"
             android:icon="@drawable/ic_settings_about"
-            android:fragment="com.cerberusos.den.fragments.About" /> -->
+            android:fragment="com.cerberusos.den.fragments.About" />
 
         <Preference
             android:key="cerberusos_ota"

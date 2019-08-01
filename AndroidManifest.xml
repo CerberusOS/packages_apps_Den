@@ -47,15 +47,6 @@
         </activity>
 
         <activity
-            android:name=".changelog.ChangelogActivity"
-            android:label="@string/changelog_name">
-            <intent-filter>
-                <action android:name="com.cerberusos.den.ViewChangelog" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".HiddenAnimActivity"
             android:label="@string/hidden_anim_activity_title"
             android:excludeFromRecents="true" />

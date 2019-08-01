@@ -25,11 +25,11 @@
         android:key="cerberusos_logo"
         android:layout="@layout/about_logo" />
 
-    <PreferenceScreen
+    <Preference
+        android:key="cerberusos_changelog"
         android:title="@string/cerberusos_changelog_title"
         android:summary="@string/cerberusos_changelog_summary">
-        <intent android:action="com.cerberusos.den.ViewChangelog" />
-    </PreferenceScreen>
+    </Preference>
 
     <!-- PreferenceCategory
         android:title="@string/weblinks_category">

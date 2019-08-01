@@ -67,30 +67,6 @@
         <item name="color_settings_icon">?android:attr/colorAccent</item>
     </style>
 
-    <style name="ChangelogTheme_Light" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorAccent">@color/accent_light</item>
-        <item name="changelog_color_bg">?android:attr/colorBackground</item>
-        <item name="changelog_color_header_back">?attr/colorBackgroundFloating</item>
-        <item name="changelog_color_commit_message">?android:attr/textColorPrimary</item>
-        <item name="changelog_color_commit_bg">#eeeeee</item>
-        <!-- Changelog image behind status bar -->
-        <item name="android:windowTranslucentStatus">true</item>
-        <!-- White navbar -->
-        <item name="android:navigationBarDividerColor">#1f000000</item>
-        <item name="android:navigationBarColor">@android:color/white</item>
-        <item name="android:windowLightNavigationBar">true</item>
-    </style>
-
-    <style name="ChangelogTheme_Dark" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorAccent">@color/accent_dark</item>
-        <item name="changelog_color_bg">?android:attr/colorBackground</item>
-        <item name="changelog_color_header_back">?attr/colorBackgroundFloating</item>
-        <item name="changelog_color_commit_message">?android:attr/textColorPrimary</item>
-        <item name="changelog_color_commit_bg">#212121</item>
-        <!-- Changelog image behind status bar -->
-        <item name="android:windowTranslucentStatus">true</item>
-    </style>
-
     <!-- DUI -->
     <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
 

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">Den</string>
 
@@ -421,6 +421,9 @@
 
     <string name="cerberusos_changelog_title">Changelog</string>
     <string name="cerberusos_changelog_summary">View recent changes made to CerberusOS</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/CerberusOS/official_devices/Pie/<xliff:g id="device_name">%1$s</xliff:g>/changelog.txt</string>
+    <string name="changelog_fail">Failed to retrieve changelog</string>
+	
 
     <string name="cerberusos_downloads_title">Downloads</string>
     <string name="cerberusos_downloads_summary">Visit the CerberusOS download page for your device</string>
