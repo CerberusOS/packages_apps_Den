@@ -31,11 +31,6 @@
         <intent android:action="com.cerberusos.den.ViewChangelog" />
     </PreferenceScreen>
 
-    <PreferenceScreen
-        android:title="@string/stats_title"
-        android:summary="@string/stats_summary"
-        android:fragment="com.cerberus.den.romstats.AnonymousStats" />
-
     <!-- PreferenceCategory
         android:title="@string/weblinks_category">
 
