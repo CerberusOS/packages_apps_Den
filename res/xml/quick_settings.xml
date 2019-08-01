@@ -22,6 +22,7 @@
     android:title="@string/quick_settings_title">
 
     <PreferenceCategory
+        app:iconSpaceReserved="false"
         android:title="@string/qs_row_column_config">
 
          <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
@@ -32,7 +33,8 @@
             app:unitsLeft=""
             app:unitsRight=""
             android:defaultValue="3"
-            android:persistent="false" />
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
 
          <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
             android:key="qs_rows_landscape"
@@ -42,7 +44,8 @@
             app:unitsLeft=""
             app:unitsRight=""
             android:defaultValue="2"
-            android:persistent="false" />
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
 
          <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
             android:key="qs_columns_portrait"
@@ -52,7 +55,8 @@
             app:unitsLeft=""
             app:unitsRight=""
             android:defaultValue="4"
-            android:persistent="false" />
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
 
          <com.cerberusos.gear.preference.SystemSettingSeekBarPreference
             android:key="qs_columns_landscape"
@@ -62,26 +66,30 @@
             app:unitsLeft=""
             app:unitsRight=""
             android:defaultValue="5"
-            android:persistent="false" />
+            android:persistent="false"
+            app:iconSpaceReserved="false" />
 
      </PreferenceCategory>
 
 
     <PreferenceCategory
+        app:iconSpaceReserved="false"
         android:title="@string/qs_brightness_slider">
 
         <com.cerberusos.gear.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_show_brightness_title"
             android:summary="@string/qs_show_brightness_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
 
         <com.cerberusos.gear.preference.SecureSettingSwitchPreference
             android:key="qs_brightness_position_bottom"
             android:title="@string/qs_brightness_position_bottom_title"
             android:summary="@string/qs_brightness_position_bottom_summary"
             android:defaultValue="false"
-            android:dependency="qs_show_brightness" />
+            android:dependency="qs_show_brightness"
+            app:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 
@@ -89,6 +97,8 @@
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
         android:summary="@string/quick_settings_vibrate_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false" />
 
 </PreferenceScreen>
