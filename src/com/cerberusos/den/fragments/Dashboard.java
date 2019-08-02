@@ -39,8 +39,6 @@ import com.cerberusos.den.utils.Util;
 
 import android.os.SystemProperties;
 
-import com.plattysoft.leonids.ParticleSystem;
-
 import java.util.Random;
 
 public class Dashboard extends BaseSettingsFragment {
@@ -90,55 +88,6 @@ public class Dashboard extends BaseSettingsFragment {
         //Preference logIt = findPreference(PREF_LOG_IT);
         //Util.requireRoot(getActivity(), logIt);
 
-        /*mCerberusOSLogo.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                int firstRandom = mRandom.nextInt(91 - 0);
-                int secondRandom = mRandom.nextInt(181 - 90) + 90;
-                int thirdRandom = mRandom.nextInt(181 - 0);
-
-                // Let's color the star randomly
-                Drawable star = getResources().getDrawable(R.drawable.star_white_border, null);
-                int randomColor;
-                randomColor = Color.rgb(
-                        Color.red(mRandom.nextInt(0xFFFFFF)),
-                        Color.green(mRandom.nextInt(0xFFFFFF)),
-                        Color.blue(mRandom.nextInt(0xFFFFFF)));
-                star.setTint(randomColor);
-
-                ParticleSystem ps = new ParticleSystem(getActivity(), 100, star, 3000);
-                ps.setScaleRange(0.7f, 1.3f);
-                ps.setSpeedRange(0.1f, 0.25f);
-                ps.setAcceleration(0.0001f, thirdRandom);
-                ps.setRotationSpeedRange(firstRandom, secondRandom);
-                ps.setFadeOut(200, new AccelerateInterpolator());
-                ps.oneShot(getView(), 100);
-
-                mCerberusOSLogo.setLongClickBurst(2000/((++mLogoClickCount)%5+1));
-                return true;
-            }
-        });*/
-        /*mCerberusOSLogo.setOnLongClickListener(R.id.logo_view, 1000,
-                new Preference.OnPreferenceClickListener() {
-                        @Override
-                        public boolean onPreferenceClick(Preference preference) {
-                            int firstRandom = mRandom.nextInt(91 - 0);
-                            int secondRandom = mRandom.nextInt(181 - 90) + 90;
-                            int thirdRandom = mRandom.nextInt(181 - 0);
-
-                            Drawable star =
-                                    getResources().getDrawable(R.drawable.star_alternative, null);
-
-                            ParticleSystem ps = new ParticleSystem(getActivity(), 100, star, 3000);
-                            ps.setScaleRange(0.7f, 1.3f);
-                            ps.setSpeedRange(0.1f, 0.25f);
-                            ps.setAcceleration(0.0001f, thirdRandom);
-                            ps.setRotationSpeedRange(firstRandom, secondRandom);
-                            ps.setFadeOut(1000, new AccelerateInterpolator());
-                            ps.oneShot(getView(), 100);
-                            return true;
-                        }
-                });*/
     }
 
     @Override

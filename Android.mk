@@ -35,8 +35,6 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     CerberusOSGear-preference \
     CerberusOSGear-util
 
-LOCAL_STATIC_JAVA_LIBRARIES := \
-    particles
 
 # Apache http for stats
 LOCAL_JAVA_LIBRARIES := org.apache.http.legacy

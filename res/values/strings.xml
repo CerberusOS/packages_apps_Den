@@ -434,7 +434,7 @@
     <string name="stats_title">Statistics</string>
     <string name="stats_summary">Opt in/out for anonymous stats</string>
 
-    <string name="device_maintainer_title">Device maintainer</string>
+    <string name="device_maintainer_title">Device</string>
     <string name="device_maintainer_dialog">Device maintainer</string>
     <string name="device_maintainers_dialog">Device maintainers</string>
     <string name="device_maintainer_default">Unknown</string>
